@@ -36,7 +36,7 @@ program
     tasks.push({
       id: tasks.length + 1,
       ...answers,
-      status: 'not done',
+      status: 'not-done',
     });
     saveTask(tasks);
     console.log('Task added!');
@@ -66,9 +66,15 @@ program
         message: 'New task description (Leave blank to keep current ',
       },
     ]);
-    tasks[taskFile] = { ...tasks[taskIndex], ...answers };
-    saveTask();
-    console.log('Task updated');
+
+    tasks[taskIndex] = { ...tasks[taskIndex], ...answers };
+
+    try {
+      saveTask(tasks); // Save updated tasks to file
+      console.log('Task updated!');
+    } catch (error) {
+      console.error('Failed to save updated task:', error);
+    }
   });
 
 // delete a task
@@ -88,7 +94,7 @@ program
   .command('status <id> <status>')
   .description('Mark a task as not done, in progress, or done')
   .action((id, status) => {
-    const validStatuses = ['not done', 'in progress', 'done'];
+    const validStatuses = ['not-done', 'in-progress', 'done'];
     if (!validStatuses.includes(status)) {
       console.log(`Invalid status. Choose from: ${validStatuses.join(', ')}`);
       return;
