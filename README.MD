@@ -16,47 +16,56 @@ A simple command-line task manager built with Node.js. This tool helps you to ma
 
 1. Clone the repository or download the source files:
 
-   ```bash
-   git clone https://github.com/oluwaseun-Adesina/roadmap.sh-backendprojects.git
-   cd cli-task-manager
+```bash
+git clone https://github.com/oluwaseun-Adesina/roadmap.sh-backendprojects.git
+cd cli-task-manager
 
-   ```
+```
 
 2. Install the required dependencies:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 3: Link the CLI tool globally to use it as a command:
 
-````bash
+```bash
 npm link
+```
 
 Usage
 Here are the available commands:
 
 Add a New Task
+
 ```bash
 task add
+```
 
 This command will prompt you to enter a task title and description.
 
 Update an Existing Task
+
 ```bash
 task update <id>
+```
 
 Replace <id> with the task ID. This command will prompt you to update the task title and/or description.
 
 Delete a Task
+
 ```bash
 task delete <id>
+```
 
 Replace <id> with the task ID. This command deletes the task permanently.
 
 Mark a Task’s Status
+
 ```bash
 task status <id> <status>
+```
 
 <id>: Task ID.
 <status>: Set the task’s status to one of the following values:
@@ -65,13 +74,16 @@ in progress
 done
 
 eg
+
 ```bash
 task status 2 in progress
-
+```
 
 List All Tasks
+
 ```bash
 task list
+```
 
 Lists all tasks with their status.
 
@@ -80,6 +92,7 @@ To filter tasks by their status, use the --status option:
 
 ```bash
 task list --status <status>
+```
 
 Replace <status> with one of the following:
 
@@ -90,7 +103,7 @@ Example:
 
 ```bash
 task list --status done
-
+```
 
 Project Structure
 index.js: Main script containing all commands and logic.
@@ -103,4 +116,3 @@ Feel free to fork this repository and make improvements. Pull requests are welco
 
 License
 This project is licensed under the MIT License.
-````
