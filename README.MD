@@ -105,7 +105,7 @@ Example:
 task list --status done
 ```
 
-[Project Link](https://github.com/oluwaseun-Adesina/cli-task-manager)
+[Project Link](https://roadmap.sh/projects/task-tracker)
 
 Project Structure
 index.js: Main script containing all commands and logic.
