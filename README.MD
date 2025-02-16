@@ -106,7 +106,7 @@ task list --status done
 ```
 
 ```bash
-Project Link: https://github.com/oluwaseun-Adesina/cli-task-manager
+[Project Link](https://github.com/oluwaseun-Adesina/cli-task-manager)
 ```
 
 Project Structure
