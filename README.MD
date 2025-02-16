@@ -105,6 +105,10 @@ Example:
 task list --status done
 ```
 
+```bash
+Project Link: https://github.com/oluwaseun-Adesina/cli-task-manager
+```
+
 Project Structure
 index.js: Main script containing all commands and logic.
 tasks.json: Stores task data in JSON format.
