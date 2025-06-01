@@ -4,7 +4,7 @@
   "main": "app.js",
   "type": "commonjs",
   "bin": {
-    "task": "./app.js"
+    "app": "./app.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
