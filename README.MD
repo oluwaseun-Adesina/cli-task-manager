@@ -40,7 +40,7 @@ Here are the available commands:
 Add a New Task
 
 ```bash
-task add
+app add
 ```
 
 This command will prompt you to enter a task title and description.
@@ -48,7 +48,7 @@ This command will prompt you to enter a task title and description.
 Update an Existing Task
 
 ```bash
-task update <id>
+app update <id>
 ```
 
 Replace <id> with the task ID. This command will prompt you to update the task title and/or description.
@@ -56,7 +56,7 @@ Replace <id> with the task ID. This command will prompt you to update the task t
 Delete a Task
 
 ```bash
-task delete <id>
+app delete <id>
 ```
 
 Replace <id> with the task ID. This command deletes the task permanently.
@@ -64,7 +64,7 @@ Replace <id> with the task ID. This command deletes the task permanently.
 Mark a Task’s Status
 
 ```bash
-task status <id> <status>
+app status <id> <status>
 ```
 
 <id>: Task ID.
@@ -76,13 +76,13 @@ done
 eg
 
 ```bash
-task status 2 in progress
+app status 2 in progress
 ```
 
 List All Tasks
 
 ```bash
-task list
+app list
 ```
 
 Lists all tasks with their status.
@@ -91,7 +91,7 @@ List Tasks by Status
 To filter tasks by their status, use the --status option:
 
 ```bash
-task list --status <status>
+app list --status <status>
 ```
 
 Replace <status> with one of the following:
@@ -102,10 +102,10 @@ done
 Example:
 
 ```bash
-task list --status done
+app list --status done
 ```
 
-[Project Link](https://roadmap.sh/projects/task-tracker)
+[Project Link](https://github.com/oluwaseun-Adesina/cli-task-manager)
 
 Project Structure
 index.js: Main script containing all commands and logic.
